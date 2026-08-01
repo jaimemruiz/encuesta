@@ -20,7 +20,6 @@ formulario.addEventListener('submit', async function (evento) {
     const dispositivo = document.getElementById('dispositivo').value;
     const problema = document.getElementById('problema').value;
     const solucion_actual = document.getElementById('solucion_actual').value;
-    const solucion_ideal = document.getElementById('solucion_ideal').value;
 
     const {data, error} = await conexionBD
     .from('respuestas')
@@ -30,8 +29,7 @@ formulario.addEventListener('submit', async function (evento) {
             profesion: profesion,
             dispositivo: dispositivo,
             problema: problema,
-            solucion_act: solucion_actual,
-            solucion_ideal: solucion_ideal
+            solucion_act: solucion_actual
         }
     ]);
     
