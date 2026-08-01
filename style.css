@@ -121,24 +121,86 @@ button:active {
   transform: scale(0.95);
 }
 
-.grupo-contra{
+/* Estilos específicos para la contraseña y el checkbox de ver clave */
+.grupo-contra {
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
-
-
+    margin-bottom: 15px;
 }
-.grupo-contra .password{
-    width: 95%;
+
+.grupo-contra .password {
+    width: 90%;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
 }
-.grupo-contra .mostrar{
-    width: 5%;
-    border-radius: 8px;
-    border: 2px solid #065f46;
-    padding: 12px; /* Damos espacio interno para que el texto respire */
+
+.grupo-contra .mostrar {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
+/* Estilos profesionales para la tabla de resultados */
+#tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
 
+#tabla-datos th {
+    background-color: #065f46;
+    color: #fff8e7;
+    padding: 14px;
+    text-align: left;
+    border: 1px solid #043f2e;
+}
+
+#tabla-datos td {
+    padding: 12px 14px;
+    border: 1px solid #e5e7eb;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+}
+
+#tabla-datos tr:nth-child(even) {
+    background-color: #fdfbf7;
+}
+
+/* Estilo para el botón de marcar leído dentro de la tabla */
+.btn-leido {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.2s;
+}
+
+.btn-leido:hover {
+    background-color: #2563eb;
+}
+
+.celda{
+    padding: 12px; 
+    border: 1px solid #ddd;
+}
+
+.btn-leido{
+    padding: 6px 12px;
+    font-size: 14px; 
+    background-color: #3b82f6; 
+    border: none; 
+    border-radius: 4px; 
+    color: white; 
+    cursor: pointer;
+}
 
