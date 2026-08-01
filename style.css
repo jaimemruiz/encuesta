@@ -121,5 +121,24 @@ button:active {
   transform: scale(0.95);
 }
 
+.grupo-contra{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+
+}
+.grupo-contra .password{
+    width: 95%;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+.grupo-contra .mostrar{
+    width: 5%;
+    border-radius: 8px;
+    border: 2px solid #065f46;
+    padding: 12px; /* Damos espacio interno para que el texto respire */
+}
+
 
 
