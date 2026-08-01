@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8e7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #065f46;
+    /* He ajustado la sombra para que caiga recta y suave, el -10px la tiraba muy a la izquierda */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #fff8e7;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    font-size: 24px;
+}
+
+main {
+    margin-top: 100px;
+    /* Centramos el contenido principal para que no ocupe toda la pantalla en monitores grandes */
+    display: flex;
+    justify-content: center;
+    padding: 0 20px; /* Margen de seguridad para móviles */
+}
+
+form {
+    /* Le damos estructura al formulario para que los fieldsets se apilen bien */
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Separación entre las secciones */
+    width: 100%;
+    max-width: 600px; /* Ancho máximo para que se lea cómodamente */
+    padding-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grupo-encuesta {
+    /* Mejor usar flex para controlar la separación entre label e input */
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 15px;
+}
+
+legend {
+    font-size: 24px;
+    margin-bottom: 15px; /* Separamos el título de las preguntas */
+    color: #065f46; /* Le damos el color principal para que destaque */
+    font-weight: 600; /* Lo hacemos negrita usando la fuente Poppins que cargaste */
+}
+
+label {
+    color: rgba(0, 0, 0, 0.74);
+    margin-bottom: 5px; /* Separación entre el texto y la caja de respuesta */
+}
+
+/* Agrupamos estilos comunes para todos los campos de texto */
+input, select, textarea {
+    border-radius: 8px;
+    border: 2px solid #065f46;
+    padding: 12px; /* Damos espacio interno para que el texto respire */
+    font-family: 'Inter', sans-serif; /* Usamos la fuente de lectura que cargaste */
+    width: 100%; /* Hacemos que ocupen todo el espacio disponible de su contenedor */
+}
+
+select{
+    background-color: #ffffff;
+}
+
+textarea {
+    height: 150px; /* Reducido un poco para no ocupar tanta pantalla de golpe */
+    resize: vertical; /* Permitimos que el usuario lo haga más alto si lo necesita, pero no más ancho */
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.texto_label {
+    /* Corregido: para usar flex-direction necesitas display flex */
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+button {
+  font-size: 20px;
+  background: #065f46;
+  color: #fff8e7;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+
+}
+
+
+button:hover {
+  background-color: #043f2e;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+

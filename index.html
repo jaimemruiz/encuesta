@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+  <title>Encuesta</title>
+</head>
+
+<body>
+
+  <header>
+    Encuesta
+  </header>
+
+
+  <main>
+    <form id="formulario">
+      <fieldset>
+        <legend>Datos Estadisticos</legend>
+        <div class="grupo-encuesta">
+          <label for="edad">Edad</label>
+          <input id="edad" type="number" min="0" max="120" placeholder="18" required>
+        </div>
+        <div class="grupo-encuesta">
+          <label for="profesion">Profesion</label>
+          <input id="profesion" type="text" placeholder="Estudiante" required>
+        </div>
+        <div class="grupo-encuesta">
+          <label for="dispositivo">Dispositivo</label>
+          <select id="dispositivo" required>
+            <option value=""></option>
+            <option value="ordenador">Ordenador</option>
+            <option value="telefono">Telefono</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+          <legend>Problema a Resolver</legend>
+          <div class="texto_label">
+            <label>Problema</label>
+            <textarea name="problema" id="problema" required
+              placeholder="Redacta aqui el problema que le gustaria que fuera resulto"></textarea>
+          </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Soluciones</legend>
+        <div class="texto_label">
+          <label>Que solucion tienes actualmente</label>
+          <textarea name="solucion_actual" id="solucion_actual" required
+          placeholder="Redacta aquí como solucionas este problema actualmente"></textarea>
+        </div>
+        <div class="texto_label">
+          <label>Como te gustaria que fuera la solucion</label>
+          <textarea name="solucion_ideal" id="solucion_ideal" required
+          placeholder="Redacta aquí como te gustaria que fuera la solucion"></textarea>
+        </div>
+      </fieldset>
+      <button id="enviar" type="submit">Enviar</button>
+    </form>
+    
+    
+    
+  </main>
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+ <script src="app.js"></script>
+
+</body>
+
+</html>
