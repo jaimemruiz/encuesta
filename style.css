@@ -53,6 +53,7 @@ fieldset {
     display: flex;
     flex-direction: column; 
     margin-bottom: 15px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
 }
 
 legend {
@@ -74,6 +75,11 @@ input, select, textarea {
     padding: 12px; /* Damos espacio interno para que el texto respire */
     font-family: 'Inter', sans-serif; /* Usamos la fuente de lectura que cargaste */
     width: 100%; /* Hacemos que ocupen todo el espacio disponible de su contenedor */
+}
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #3b82f6; /* Color corporativo, un azul bonito */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15); /* Un halo suave alrededor */
 }
 
 select{
@@ -97,10 +103,11 @@ button {
   font-size: 20px;
   background: #065f46;
   color: #fff8e7;
-  padding: 5px;
+  padding: 12px 20px;
   border-radius: 8px;
   cursor: pointer;
   border: none;
+  width: 100%;
 
 }
 
@@ -113,4 +120,6 @@ button:hover {
 button:active {
   transform: scale(0.95);
 }
+
+
 
