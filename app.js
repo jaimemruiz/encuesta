@@ -30,21 +30,20 @@ formulario.addEventListener('submit', async function (evento) {
             profesion: profesion,
             dispositivo: dispositivo,
             problema: problema,
-            solucion_actual: solucion_act,
+            solucion_act: solucion_actual,
             solucion_ideal: solucion_ideal
         }
-    ])
+    ]);
     
-  if (error) {
-        console.error('Error al enviar:', error);
-        alert('Hubo un error al enviar la encuesta. Inténtalo de nuevo.');
+    if (error) {
+        console.error('Error de Supabase:', error);
+        alert('Hubo un error de base de datos. Mira la consola.');
         boton.textContent = 'Enviar';
         boton.disabled = false;
     } else {
-        alert('¡Encuesta enviada con éxito! Muchas gracias.');
         formulario.reset();
         boton.textContent = 'Enviar';
-
+        boton.disabled = false;
     }
 
 })
