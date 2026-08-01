@@ -82,7 +82,7 @@ select{
 
 textarea {
     height: 150px; /* Reducido un poco para no ocupar tanta pantalla de golpe */
-    resize: vertical; /* Permitimos que el usuario lo haga más alto si lo necesita, pero no más ancho */
+    resize: none; /* Permitimos que el usuario lo haga más alto si lo necesita, pero no más ancho */
     color: rgba(0, 0, 0, 0.8);
 }
 
